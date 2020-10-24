@@ -12,6 +12,147 @@
 </head> 
 <body>
 
+    <header class="header-desk">
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6" style="border-right: 2px solid #fff;">
+                        <p><img src="./assets/images/Plane.svg" alt="Icone Avião" class="img-middle"> Frete grátis a partir de R$ 169,90</p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <p><img src="./assets/images/Gift.svg" alt="Icone Presente" class="img-middle"> Ganhe uma bandana a partir de R$ 259,00 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sub_menu">
+            <div class="container">
+                <div class="row p-1">
+                    <div class="col-lg-2 col-md-2">
+                        <p><img src="./assets/images/pin.svg" alt="Icone Localização" class="img-middle"> Nossas lojas</p>
+                    </div>
+                
+                    <div class="col-lg-3 col-md-3">
+                        <p><img src="./assets/images/phone.svg" alt="Icone Telefone" class="img-middle"> Atendimento ao cliente</p>
+                    </div>
+                
+                    <div class="col-lg-5 col-md-5">
+                        <div class="span-block">
+                            <span class="span-header"> <img src="./assets/images/percentage.png" alt="Icone Porcentagem" class="img-middle">  Ganhe <strong> 10% </strong> off na primeira compra</span>
+
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-1 col-md-1">
+                        <img src="./assets/images/user.svg" alt="Icone Usúario">
+                    </div>
+                
+                    <div class="col-lg-1 col-md-1">
+                        <img src="./assets/images/Bag.svg" alt="Icone Carrinho">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="container">
+                <div class="row p-2">
+                    <div class="col-lg-2 col-md-2">
+                        <img src="./assets/images/Logoipsum.svg" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-2">
+                        <span class="new_scooby"> Scooby-Doo </span>
+                    </div>
+                
+                    <div class="col-lg-7 col-md-7">
+                        <ul class="list-menu">
+                            <li><a href=""> Cachorros</a></li>
+                            <li><a href=""> Gatos</a></li>
+                            <li><a href=""> Coleções</a></li>
+                            <li><a href=""> Outlet</a></li>
+                            <li><a href=""> Lookbook</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="col-lg-1 col-md-1">
+                        <img src="./assets/images/search.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="topbar-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <p>Indique amigos para conhecer a Logoipsum. <strong>Dê 15% OFF e ganhe R$ 25. Comece agora</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-7">
+              <div class="text-banner">
+                <p> NOVA <br/> COLEÇÃO</p>
+                <h1> DC Comics + Logoipsum</h1>
+
+                <div class="buttons-banner">
+                    <button> Para cachorros</button>    
+                    <button id="btn-gato"> Para Gatos</button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="categories_above_banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 text-center bg-gray-light">
+                    <figure>
+                        <img src="./assets/images/peitoral.svg" alt="Imagem de uma peitoral" style="width: 530px;">
+        
+                        <button class="btn-cat-above-banner"> PEITORAIS</button>
+                    </figure>
+                </div>
+        
+                <div  class="col-lg-6 col-md-6 text-center bg-gray-light">
+               
+                       <figure>
+                        <img src="./assets/images/Roupinha.png" alt="Imagem de ROUPINHAS para cachorro" style=" width: 150px;">
+                       </figure>
+                        <button class="btn-cat-above-banner">  ROUPINHAS</button>
+             
+        
+                    
+                        <div class="content-cat">
+                            <div class="block-coleira">
+                                <figure>
+                                    <img src="./assets/images/coleiras.png" alt="Imagem de ROUPINHAS para cachorro">
+                                </figure>
+                            <button class="btn-cat-above-banner"> COLEIRAS </button>
+                            </div>
+                     
+                      
+                            <div class="block-guias">
+                                <figure>
+                                    <img src="./assets/images/guias.png" alt="Imagem de GUIAS para cachorro">
+                                </figure>
+                                <button class="btn-cat-above-banner"> GUIAS </button>
+                            </div>
+                        </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="section_categories bg-cat-dog">
         <div class="container">
             <div class="row">
@@ -243,8 +384,19 @@
     arrows: false,
     slidesToShow: 3,
     responsive: [
+
+    {
+        breakpoint: 1024,
+        settings: {
+            arrows: false,
+            centerMode: true,
+            centerPadding: '80px',
+            slidesToShow: 3
+        }
+        },
+    
         {
-        breakpoint: 768,
+        breakpoint: 992,
         settings: {
             arrows: false,
             centerMode: true,
@@ -252,6 +404,7 @@
             slidesToShow: 3
         }
         },
+        
         {
         breakpoint: 480,
         settings: {
